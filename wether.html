@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/bootstrap/bt5.css"/> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link href="site.css" rel="stylesheet"/>
+  <link href="cssSlider.css" rel="stylesheet"/>
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+
+<main class="main-container">
+ <!-- currentInfo -->
+  <div class="location-and-date">
+    <h1 id="location">Damascus , Syria</h1>
+    <h4 id="date">Sunday 4th August</h4>
+  </div>
+
+
+  <div class="current-temperature">
+    <div class="current-temperature__icon-container" id="cicon">
+      <img src="" class="current-temperature__icon">
+    </div>
+    <div class="current-temperature__content-container">
+      <div class="current-temperature__value" id="current-temp"></div>
+      <div class="current-temperature__summary" id="description"></div>
+    </div>
+  </div>
+
+
+  <div class="current-stats">
+    <div>
+      <div class="current-stats__value" id="max"></div>
+      <div class="current-stats__label">High</div>
+      <div class="current-stats__value" id="min"></div>
+      <div class="current-stats__label">Low</div>
+    </div>
+    <div>
+      <div class="current-stats__value" id="win-speed"></div>
+      <div class="current-stats__label">Wind</div>
+      <div class="current-stats__value" id="humidity"></div>
+      <div class="current-stats__label">Humidity</div>
+    </div>
+    <div>
+      <div class="current-stats__value" id="sunrise"></div>
+      <div class="current-stats__label">Sunrise</div>
+      <div class="current-stats__value" id="sunset"></div>
+      <div class="current-stats__label">Sunset</div>
+    </div>
+  </div>
+<!-- 24hourInfo -->
+
+
+
+  <div class="weather-by-hour">
+    <h2 class="weather-by-hour__heading">Today's weather</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="cdayhours">
+        <div class="swiper-slide">
+          <div class="weather-by-hour__container">
+          <div class="weather-by-hour__item" >
+          <p class="weather-by-hour__hour"></p>
+          <img src="">
+          <p></p>
+        </div>
+      </div></div>
+    
+      </div>
+    </div>
+        </div>
+        </div>  
+    </div>
+  </div>
+
+
+  <div class="next-5-days">
+    <h2 class="next-5-days__heading d-sm-none d-md-block">Next 5 days</h2>
+    <div class="next-5-days__container" id="privousdays">
+
+        <div class="row text-center next-5-days__row mb-1 align-items-center">
+            <div class="col next-5-days__date ">
+              <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__low">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__high">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__icon">
+                <img src="">
+            </div>
+            <div class="col next-5-days__rain">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__wind">
+                <div class="next-5-days__label"></div>
+            </div>
+        </div>
+        
+        <div class="next-5-days__row ">
+          <div class="col next-5-days__date ">
+            <div class="next-5-days__label"></div>
+          </div>
+          <div class="col next-5-days__icon">
+              <img src="">
+          </div>
+          <div class="col next-5-days__low">
+              <div class="next-5-days__label"></div>
+          </div>
+          <div class="col next-5-days__high">
+              <div class="next-5-days__label"></div>
+          </div>
+          <div class="col next-5-days__wind">
+              <div class="next-5-days__label"></div>
+          </div>
+          <div class="col next-5-days__rain">
+              <div class="next-5-days__label"></div>
+          </div>
+      </div>
+        <div class="row text-center next-5-days__row mb-1 align-items-center">
+            <div class="col next-5-days__date ">
+              <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__icon">
+                <img src="">
+            </div>
+            <div class="col next-5-days__low">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__high">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__wind">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__rain">
+                <div class="next-5-days__label"></div>
+            </div>
+        </div>
+        <div class="row text-center next-5-days__row mb-1 align-items-center">
+            <div class="col next-5-days__date ">
+              <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__icon">
+                <img src="">
+            </div>
+            <div class="col next-5-days__low">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__high">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__wind">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__rain">
+                <div class="next-5-days__label"></div>
+            </div>
+        </div>
+        <div class="row text-center next-5-days__row mb-1 align-items-center">
+            <div class="col next-5-days__date ">
+              <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__icon">
+                <img src="">
+            </div>
+            <div class="col next-5-days__low">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__high">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__wind">
+                <div class="next-5-days__label"></div>
+            </div>
+            <div class="col next-5-days__rain">
+                <div class="next-5-days__label"></div>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="swiper mySwiper d-block d-sm-none" style="height: auto;">
+    <div class="swiper-wrapper" id="privousdayscard">
+        <div class="weather-by-hour__item next-5-days__date" >
+        <p class="next-5-days__icon"></p>
+        <img src="">
+        <p class="next-5-days__low"></p>
+    </div>
+    </div>
+    </div>   -->
+</div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 5,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<!-- <script src="script.js"></script> -->
+<script src="newscript.js"></script>
+</body>
+</html>
